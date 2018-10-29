@@ -1,6 +1,6 @@
 body{
     background:white; 
-    width: 800px;
+ 
     margin: auto;
 }
 h1{
@@ -17,4 +17,9 @@ p{
     text-align: justify;
     text-indent: 20px;
     border: 4px #7E0451 solid;
+}
+img{
+   width: 200px; 
+  float: left;
+  margin-right: 10px;
 }
