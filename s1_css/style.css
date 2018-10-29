@@ -1,0 +1,18 @@
+body{
+background:black;
+color: white;
+width: 900px;
+
+}
+
+h1, h2{
+   background: purple;
+   text-align: center;
+   text-transform: uppercase; 
+}
+p{
+    text-align: justify;
+    background: white;
+    color: purple
+   
+}
