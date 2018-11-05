@@ -16,24 +16,53 @@ h2{
 }
 
 p{
+    margin: auto;
+    width: 800px;
     border: 4px red solid;
    padding: 10px;
    text-align: justify;
    border-radius: 10px;
    text-indent: 20px;
+   line-height: 25px;
 }
 img{
     width: 100%;
 }
 p img{
 width: 300px;
+height: 300px;
+border-radius: 150px;
 float: left;
-border: 1px solid red;
 margin-right: 10px;
+
 }
 p::first-letter{
     font-size: 100px;
     float: left;
     margin-right: 20px;
     color: brown;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+p::first-line{
+    text-decoration: underline;
+}
+table  {
+    border: 2px solid black;
+width: 400px;
+margin: auto;
+}
+td{
+       border: 2px solid red;
+       padding: 20px;
+       text-align: center;
+}
+thead td{
+    background: black;
+    color: white;
+}
+tfoot td{
+    background: yellow;
+    border: none;
+
 }
