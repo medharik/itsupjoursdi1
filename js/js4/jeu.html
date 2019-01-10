@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JEU</title>
+    <link rel="stylesheet" href="jeu.css">
+    <script src="jeu.js"></script>
+</head>
+<body>
+
+    <form action="">
+       <fieldset>
+           <legend align="center">Exercice de Calcul</legend>
+            <table align="center">
+
+                    <tr>
+                        <td>Nombre 1 :</td>
+                        <td><input type="text" name="n1" id="n1" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre 2 :</td>
+                        <td><input type="text" name="n2" id="n2" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="*"></td>
+                    </tr>
+                </table>
+       </fieldset>
+       <fieldset align="center">
+           <legend>Donne Ta réponse :</legend>
+           <input type="text" name="rep" id="rep" autocomplete="off">
+           <input type="button" value="REPONDRE" onclick="repondre()">
+       </fieldset>
+
+   
+       <div id="tof">
+           <img src="images/ok.jpg" alt="" class="cacher" id="image">
+       </div>
+
+    </form>
+    
+</body>
+</html>

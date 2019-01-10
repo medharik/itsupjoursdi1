@@ -7,71 +7,24 @@
     <title>les formulaires</title>
 </head>
 <body>
-    <form>
+    <form method="post">
     <table align="center" border="0" width="400">
         <tr>
             <td>Email</td>
-            <td><input  placeholder="Entrer votre email" type="text" name="email2" id="email2"></td>
+            <td><input  placeholder="Entrer votre email" type="text" name="email" id="email" autocomplete="off" value=""></td>
         </tr>
         <tr>
             <td>Mot de passe : </td>
-            <td><input type="password" name="passe2" id="passe"></td>
+            <td><input type="password" name="passe" id="passe"></td>
         </tr>
        
-        <tr>
-            <td>Situation familialle</td>
-            <td>
-             <label for="m">Marié(e)</label>   
-                
-                <input type="radio" name="st" id="m" value="Marie">
-                <br>
-                <label for="celi">célibataire(e)          </label>
-                <input type="radio" name="st" id="celi" value="celibatiaire">
 
-            </td>
-        </tr>
-        <tr>
-            <td>Langues parlées M </td>
-            <td>
-                <label for="f">Francais</label>
-                <input type="checkbox" name="f" id="f" value="Fr">
-                <label for="ang">Anglais</label>
-                <input type="checkbox" name="ang" id="ang" value="EN">
-                <label for="ar">Arabe</label>
-                <input type="checkbox" name="ar" id="ar" value="ar">
-
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-            <label for="cv">CV</label>
-                
-            </td>
-            <td><input type="file" name="cv" id="cv"></td>
-        </tr>
-<tr>
-    <td>Couleur</td>
-    <td><input type="color" name="" id=""></td>
-</tr>
-<tr>
-    <td>Date de naissance : </td>
-    <td><input type="date" name="" id=""></td>
-</tr>
-<tr>
-    <td>Email2 (*) </td>
-    <td><input required type="email" name="" id=""></td>
-</tr>
-<tr>
-    <td>salaire :</td>
-    <td> <input required type="number" name="" id=""></td>
-</tr>
         <tr>
                 <td></td>
                 <td>
                     <input type="submit" value="Connexion">
                     <input type="reset" value="Annuler">
-                    <input type="button" value="Rien">
+                    <input type="button" value="Rien"  id="ok">
 
                 </td>
             </tr>
@@ -79,6 +32,36 @@
     </table> 
     
     </form>
+    <script>
+function valider(){
+email=document.getElementById('email');
+passe=document.querySelector('#passe');
+t=[{'c':email,'requis':'oui'},{'c':passe,'max':10}];
+
+for(i=0;i<t.length;i++){
+  //alert(t[i].parentNode.parentNode.querySelector('td').innerHTML)
+  alert(t[i].requis)
+if(t[i].requis=="oui"){
+    sp=document.createElement('span');
+    alert(t[i].c.value)
+    sp.innerHTML=t[i].c.name+" est requis";
+   
+    t[i].c.parentNode.appendChild(sp);
+   sp.setAttribute('class','error');
+}else{
+    sl=document.querySelector('span');
+    if(sl !=null)
+    t[i].c.parentNode.removeChild(sl);
+}
+
+}
+
+
+}
+document.getElementById('ok').addEventListener('click',valider);
+
+
+    </script>
     
 </body>
 </html>

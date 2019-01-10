@@ -1,0 +1,30 @@
+#score{
+    background: rgb(240, 236, 236);
+    text-align: center;
+    border:2px solid greenyellow;
+    height: 40px;
+}
+fieldset{
+    background: rgb(238, 231, 231);
+    width: 400px;
+    margin: auto;
+}
+#tof{
+    width: 400px;
+    min-height:100px ;
+    margin: auto;
+
+}
+#tof img{
+    width: 100%;
+}
+
+.cacher{
+/* display: none; */
+visibility: hidden;
+}
+.montrer{
+    /* display: block; */
+    visibility: visible;
+
+}

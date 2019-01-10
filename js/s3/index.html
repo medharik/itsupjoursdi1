@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javscript</title>
+  <link rel="stylesheet" href="style.css">
+    <script src="valid.js"></script>
+</head>
+<body>
+    <div id="erreur" align="center"></div>
+
+    <form action="">
+        <table align="center">
+            <tr>
+                <td>Prix </td>
+                <td><input type="text" name="prix" id="prix"></td>
+            </tr>
+            <tr>
+                <td>Quantité : </td>
+                <td><input type="text" name="qte" id="qte"></td>
+            </tr>
+            <tr>
+                <td>Quantité en stock </td>
+                <td><input type="text" name="qteStock" id="qteStock"></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><input type="button"  value="calculer" onclick="vendre()"></td>
+            </tr>
+        </table>
+
+    </form>
+    <div id="resultat" align="center"></div>
+</body>
+</html>
